@@ -1,1 +1,11 @@
-Dimes: %d Nickels: %d Pennies: %d", quarters, dimes, nickels, pennies
+
+@Test
+public void convertScore_input2_peanuts() {
+  Allergies returnAllergy = new Allergies();
+  ArrayList<String> userAllergy = new ArrayList<String>();
+  userAllergy.add("peanuts");
+  assertEquals(userAllergy, returnAllergy.convertScore(2));
+}
+( score == 2 ) {
+returnAllergy.add("peanuts");
+}

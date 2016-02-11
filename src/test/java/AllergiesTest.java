@@ -43,6 +43,23 @@ public class AllergiesTest {
     Allergies returnAllergy = new Allergies();
     ArrayList<String> userAllergy = new ArrayList<String>();
     userAllergy.add("eggs");
-    assertEquals(userAllergy), returnAllergy.convertScore(1));
+    assertEquals(userAllergy, returnAllergy.convertScore(1));
+  }
+  @Test
+  public void convertScore_input129_catseggs() {
+    Allergies returnAllergy = new Allergies();
+    ArrayList<String> userAllergy = new ArrayList<String>();
+    userAllergy.add("eggs");
+    userAllergy.add("cats");
+    assertEquals(userAllergy, returnAllergy.convertScore(129));
+  }
+  @Test
+  public void convertScore_input193_catseggspollen() {
+    Allergies returnAllergy = new Allergies();
+    ArrayList<String> userAllergy = new ArrayList<String>();
+    userAllergy.add("eggs");
+    userAllergy.add("cats");
+    userAllergy.add("pollen");
+    assertEquals(userAllergy, returnAllergy.convertScore(193));
   }
 }

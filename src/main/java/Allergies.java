@@ -32,6 +32,15 @@ public class Allergies {
     ArrayList<String> returnAllergy = new ArrayList<String>();
     if ( score % 2 == 1) {
       returnAllergy.add("eggs");
+      score -= 1;
+    }
+    if ( score >= 128 ) {
+      returnAllergy.add("cats");
+      score -= 128;
+    }
+    if ( score >= 64 ) {
+      returnAllergy.add("pollen");
+      score -= 64;
     }
       return returnAllergy;
   }
