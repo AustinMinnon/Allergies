@@ -42,6 +42,10 @@ public class Allergies {
       returnAllergy.add("pollen");
       score -= 64;
     }
+    if (score >= 32 ) {
+      returnAllergy.add("chocolate");
+      score -= 32;
+    }
       return returnAllergy;
   }
 }

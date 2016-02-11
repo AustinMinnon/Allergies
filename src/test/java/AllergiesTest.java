@@ -62,4 +62,12 @@ public class AllergiesTest {
     userAllergy.add("pollen");
     assertEquals(userAllergy, returnAllergy.convertScore(193));
   }
+  @Test
+  public void convertScore_input160_catschocolate() {
+    Allergies returnAllergy = new Allergies();
+    ArrayList<String> userAllergy = new ArrayList<String>();
+    userAllergy.add("cats");
+    userAllergy.add("chocolate");
+    assertEquals(userAllergy, returnAllergy.convertScore(160));
+  }
 }
